@@ -1,4 +1,4 @@
-if [ "$(hostname -d)" = "sap.corp" ]; then
+if [ "$(hostname -d)" = "apj.global.corp.sap" ]; then
     PROXY="http://proxy:8080"
 
     export http_proxy="${PROXY}"
