@@ -1,4 +1,5 @@
-if [ "$(hostname -d)" = "apj.global.corp.sap" ]; then
+domain="$(hostname -d)"
+if [ $domain = "apj.global.corp.sap" ] || [ $domain = "dhcp.pgdev.sap.corp" ]; then
     PROXY="http://proxy:8080"
 
     export http_proxy="${PROXY}"
